@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+.itemList {
+  display: flex;
+}
+
+.section {
+  width: 30%;
+}
+
+.newItem {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.section .edit {
+  display: none;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item > div {
+  display: inline-block;
+}
+
+.itemItems > i {
+  width: 40px;
+}
