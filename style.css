@@ -1,17 +1,26 @@
 h1 {
   text-align: center;
 }
+h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin-top: 5px;
+}
 .itemList {
   display: flex;
+  align-items: center;
 }
 
 .section {
   width: 30%;
+  border: 2px solid black;
+  padding-bottom: 20px ;
+  margin: 20px 20px;
+
 }
 
 .newItem {
-  width: 100%;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -22,6 +31,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2px 5px;
+  background-color: rgb(233, 236, 240);
 }
 
 .item > div {
@@ -29,5 +40,19 @@ h1 {
 }
 
 .itemItems > i {
-  width: 40px;
+  width: 15px;
+  font-size: smaller;
 }
+.arrowsright {
+  border: 1px solid black;
+}
+.arrowsleft {
+  border: 1px solid black;
+  
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+
