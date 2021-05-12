@@ -18,7 +18,11 @@ function editTask(pen){
         edit.style.display = "none";
     }
 }
-
+function trashTask(trashbin){
+    const id = trashbin.parentElement.parentElement.id;
+    const trash = document.querySelector(`#${id}`);
+    trash.parentNode.removeChild(trash);
+}
 
 
 
