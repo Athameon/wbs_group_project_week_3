@@ -19,8 +19,7 @@ function editTask(pen){
     }
 }
 function trashTask(trashbin){
-    const id = trashbin.parentElement.parentElement.id;
-    const trash = document.querySelector(`#${id}`);
+    const trash = trashbin.parentElement.parentElement;
     trash.parentNode.removeChild(trash);
 }
 
