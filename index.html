@@ -12,62 +12,19 @@
   <main>
     <h1>TODO List Group 2</h1>
     <div class="newItem">
-      <input id="newItem" type="text"><button><i class="fas fa-plus"></i></button>
+      <input id="newItem" type="text">
+      <button onclick="createNewTask()"><i class="fas fa-plus"></i></button>
     </div>
     <div class="itemList">
       <section class="section" id="todo">
         <h2>TODO</h2>
-        <div class="item" id="XYZ">
-          <div>
-            <input type="checkbox">
-            <span class="text">Paint House</span>
-            <input class="edit" type="text" value="Paint House">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
-        <div class="item" id="ABC">
-          <div>
-            <input type="checkbox">
-            <span class="text">Clean House</span>
-            <input class="edit" type="text" value="Clean House">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
       </section>
       <section class="arrowsleft">
         <i class="fas fa-arrow-right fa-2x"></i><br>
         <i class="fas fa-arrow-left fa-2x"></i>
       </section>
       <section class="section" id="inProgress">
-        <h2>In Progress</h2>
-        <div class="item" id="DEF">
-          <div>
-            <input type="checkbox">
-            <span class="text">Draw House</span>
-            <input class="edit" type="text" value="Draw House">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
-        <div class="item" id="GKK">
-          <div>
-            <input type="checkbox">
-            <span class="text">Clean Car</span>
-            <input class="edit" type="text" value="Clean Car">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
+        <h2>In Progress</h2>   
       </section>
       <section class="arrowsright">
         <i class="fas fa-arrow-right fa-2x"></i><br>
@@ -75,28 +32,6 @@
       </section>
       <section class="section" id="done">
         <h2>Done</h2>
-        <div class="item" id="BGT">
-          <div>
-            <input type="checkbox">
-            <span class="text">Drive Car</span>
-            <input class="edit" type="text" value="Drive Car">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
-        <div class="item" id="POI">
-          <div>
-            <input type="checkbox">
-            <span class="text">Water Plants</span>
-            <input class="edit" type="text" value="Water Plants">
-          </div>
-          <div class="itemItems">
-            <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-            <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
-          </div>
-        </div>
       </section>
     </div>
     <script src="script.js"></script>
@@ -104,6 +39,7 @@
   <footer>
     <p>&copy; Copyright WBS 15/21 Group 2</p>
   </footer>
-  
+  <script src="script.js"></script>
+  <script src="benScript.js"></script>
 </body>
 </html>
