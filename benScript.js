@@ -38,7 +38,7 @@ function createNewTask(inputValue = document.getElementById("newItem").value) {
   if(highestToDoTask == null) {
     newPosition = 0;
   } else {
-    let newPosition = parseInt(highestToDoTask.getAttribute('position')) + 1;
+      newPosition = parseInt(highestToDoTask.getAttribute('position')) + 1;
     if(isNaN(newPosition)) {
       newPosition = 0;
     }
