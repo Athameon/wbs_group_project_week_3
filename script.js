@@ -18,7 +18,10 @@ function editTask(pen){
         edit.style.display = "none";
     }
 }
-
+function trashTask(trashbin){
+    const trash = trashbin.parentElement.parentElement;
+    trash.parentNode.removeChild(trash);
+}
 
 
 
