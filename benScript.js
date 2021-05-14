@@ -34,6 +34,7 @@ function createNewTask(inputValue = document.getElementById("newItem").value) {
   }
 
   const highestToDoTask = document.querySelector('#todo > .item:last-child');
+  let newPosition;
   if(highestToDoTask == null) {
     newPosition = 0;
   } else {
@@ -55,7 +56,7 @@ function createNewTask(inputValue = document.getElementById("newItem").value) {
 }
 
 function uuidv4() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+  return 'axxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
     return v.toString(16);
   });
