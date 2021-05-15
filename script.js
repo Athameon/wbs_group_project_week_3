@@ -206,7 +206,7 @@ const restoreTasks = () => {
   data = JSON.parse(data);
   console.log("Following stored tasks get restored:", data);
 
-  data.sort((a, b) => a.position - b.position)
+  data.sort((a, b) => a._position - b._position)
     .forEach(task => {
       restoreTask(task);
     });
