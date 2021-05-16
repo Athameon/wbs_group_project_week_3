@@ -2,8 +2,6 @@ const toDoList = document.getElementById("todo");
 const inProgressList = document.getElementById("inProgress");
 const doneList = document.getElementById("done");
 
-deleteTaskFromLocalStorage('adc5fa86e-6b2c-4356-8617-e3f232be91bc');
-deleteTaskFromLocalStorage('aecb74718-1e61-4f8e-a7d1-c48126da3d75');
 class Task {
     constructor(title, status, position, id = uuidv4()) {
         this._title = title;
