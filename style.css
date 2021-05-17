@@ -1,29 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
   text-align: center;
+  padding: 25px ;
+  
+}
+header {
+    background-image: url("/resources/egyptwworking.jpeg");
+    background-size: cover;
+    height: 5em;
+}
+body {
+  animation: change 10s infinite;
+}
+@keyframes change {
+  0%{background-color: #cc9b6d;}
+  10%{background-color: #cea75d;}
+  25%{background-color: #f6c069;}
+  35%{background-color: #d5a654;}
+  45%{background-color: #A0937D;}
+  55%{background-color: #f1ca89;}
+  75%{background-color: #f2dac3;}
+  90%{background-color: #f1ca89;}
+  100%{background-color: #cc9b6d;}
 }
 h2 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   text-align: center;
-  margin-top: 5px;
+  margin: 10px;
+}
+main{
+  height: 700px;
 }
 .itemList {
   display: flex;
   align-items: center;
 }
-
 .section {
   width: 30%;
-  border: 2px solid black;
+  border: 2px solid grey ;
   padding-bottom: 20px ;
   margin: 20px 20px;
-
+  background-color: bisque;
+  border-radius: 15px;
+  min-height: 5rem;
 }
-
 .newItem {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 1px;
+  cursor: pointer;
+  margin-top: 10px;
+  
 }
-
 .section .edit {
   display: none;
 }
@@ -32,27 +66,28 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 2px 5px;
-  background-color: rgb(233, 236, 240);
+  background-color: rgb(233, 236, 240); 
 }
-
 .item > div {
   display: inline-block;
 }
-
 .itemItems > i {
   width: 15px;
   font-size: smaller;
+  cursor: pointer; 
 }
-.arrowsright {
-  border: 1px solid black;
+.arrowsleft,
+  .arrowsright  {
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: bisque;
+  padding: 5px;
 }
-.arrowsleft {
-  border: 1px solid black;
-  
-}
-footer {
+footer > p{
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
+
+
 
 
