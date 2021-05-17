@@ -89,11 +89,18 @@ h2 {
   border-bottom-left-radius: 20px;
   border: 0;
 }
+
+#newItem:focus {
+  outline-width: 0;
+}
 .newItem button {
-  width: 50px;
+  width: 100px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 0;
+}
+.newItem button:hover {
+  background-color: #9b7143;
 }
 .section .edit {
   display: none;
@@ -102,10 +109,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 10px;
-  /* background-color: rgb(233, 236, 240); */
+  margin: 20px 15px;
   height: 30px;
   font-size: 24px;
+}
+
+.item [class="edit"] {
+  font-size: 24px;
+  max-width: 290px;
 }
 .item > div {
   display: inline-block;
@@ -123,15 +134,24 @@ h2 {
   border-radius: 40px;
   background-color: bisque;
   padding: 5px;
+}
+
+.arrowsleft i,
+.arrowsright i {
   cursor: pointer;
-  /* margin: 20px; */
+}
+
+.arrowsleft i:first-child,
+.arrowsright i:first-child {
+  margin-bottom: 40px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
+  margin: 30px auto;
   margin-bottom: 20px;
 }
 footer > p {
@@ -145,6 +165,18 @@ footer > p {
     align-items: center;
   }
   .section {
-    width: 95%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section {
+    width: 98%;
   }
 }
