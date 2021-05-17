@@ -11,34 +11,43 @@
 <body>
   <main>
     <header class='bg-image'>
-    <h1>ToDo List Group 2</h1>
+      <h1>ToDo List Group 2</h1>
     </header>
     <div class="newItem">
-      <input id="newItem" type="text">
+      <input id="newItem" placeholder="New Task" type="text">
       <button onclick="createNewTask()"><i class="fas fa-plus"></i></button>
     </div>
     <div class="itemList">
       <section class="section" id="todo">
-
         <h2>ToDo</h2>
       </section>
-
       <section class="arrowsleft">
-        <i class="fas fa-arrow-right fa-2x" id="arrow-right-1"></i><br>
-        <i class="fas fa-arrow-left fa-2x" id="arrow-left-2"></i>
+        <div class="verticalArrows">
+          <i class="fas fa-arrow-right fa-2x next"></i><br>
+          <i class="fas fa-arrow-left fa-2x back"></i>  
+        </div>
+        <div class="horizontalArrows">
+          <i class="fas fa-arrow-up fa-2x back"></i><br>
+          <i class="fas fa-arrow-down fa-2x next"></i>  
+        </div>
       </section>
       <section class="section" id="inProgress">
         <h2>In Progress</h2>   
       </section>
       <section class="arrowsright">
-        <i class="fas fa-arrow-right fa-2x" id="arrow-right-3"></i><br>
-        <i class="fas fa-arrow-left fa-2x" id="arrow-left-4"></i>
+        <div class="verticalArrows">
+          <i class="fas fa-arrow-right fa-2x next"></i><br>
+          <i class="fas fa-arrow-left fa-2x back"></i>  
+        </div>
+        <div class="horizontalArrows">
+          <i class="fas fa-arrow-up fa-2x back"></i><br>
+          <i class="fas fa-arrow-down fa-2x next"></i>  
+        </div>
       </section>
       <section class="section" id="done">
         <h2>Done</h2>
       </section>
     </div>
-    <script src="script.js"></script>
   </main>
   <footer>
     <p>&copy; Copyright WBS 15/21 Group 2</p>

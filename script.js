@@ -33,25 +33,17 @@ class Task {
 }
 
 // Arrows
-const arrow1 = document.getElementById('arrow-right-1');
-arrow1.addEventListener('click', function () {
+const nextArrows = document.getElementsByClassName('next');
+[...nextArrows].forEach(arrow => {
+  arrow.addEventListener('click', function () {
     moveTask('right');
-});
+})});
 
-const arrow2 = document.getElementById('arrow-left-2');
-arrow2.addEventListener('click', function () {
+const backArrows = document.getElementsByClassName('back');
+[...backArrows].forEach(arrow => {
+  arrow.addEventListener('click', function () {
     moveTask('left');
-});
-
-const arrow3 = document.getElementById('arrow-right-3');
-arrow3.addEventListener('click', function () {
-    moveTask('right');
-});
-
-const arrow4 = document.getElementById('arrow-left-4');
-arrow4.addEventListener('click', function () {
-    moveTask('left');
-});
+})});
 
 function moveTask(direction) {
     const checkedCheckBoxes = getCheckedCheckbox();
@@ -155,8 +147,8 @@ function getTaskTemplate(status, inputValue, uuid, position) {
         <input class="edit" type="text" value="${inputValue}">
       </div>
       <div class="itemItems">
-        <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-        <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
+        <i onClick="editTask(this)" class="fas fa-pen"></i>
+        <i onClick="trashTask(this)" class="fas fa-trash-alt"></i>
       </div>
     </div>
     `;
