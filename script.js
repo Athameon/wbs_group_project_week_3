@@ -239,7 +239,9 @@ function storeTask(task) {
     console.log("Called method 'storeTask");
     let data = window.localStorage.getItem('tasks');
     data = JSON.parse(data);
-
+    if(data===null) {
+      data = [];
+    }
     const filteredTasks = data.filter(currentTask => currentTask.id === task.id);
     if(filteredTasks.length > 0) {  // update
       console.log("Update task with id: " + task.id);
