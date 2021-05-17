@@ -1,50 +1,73 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
-  padding: 25px ;
-  
+  color: white;
+  font-size: 46px;
+  text-shadow: 3px 2px 4px black;
 }
 header {
-    background-image: url("/resources/egyptwworking.jpeg");
-    background-size: cover;
-    height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./resources/egyptwworking.jpeg");
+  background-size: cover;
+  height: 9em;
+  opacity: 0.7;
 }
 body {
-  animation: change 10s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: change 30s infinite;
 }
+
 @keyframes change {
-  0%{background-color: #cc9b6d;}
-  10%{background-color: #cea75d;}
-  25%{background-color: #f6c069;}
-  35%{background-color: #d5a654;}
-  45%{background-color: #A0937D;}
-  55%{background-color: #f1ca89;}
-  75%{background-color: #f2dac3;}
-  90%{background-color: #f1ca89;}
-  100%{background-color: #cc9b6d;}
+  0% {
+    background-color: #cc9b6d;
+  }
+  10% {
+    background-color: #cea75d;
+  }
+  25% {
+    background-color: #f6c069;
+  }
+  35% {
+    background-color: #d5a654;
+  }
+  45% {
+    background-color: #a0937d;
+  }
+  55% {
+    background-color: #f1ca89;
+  }
+  75% {
+    background-color: #f2dac3;
+  }
+  90% {
+    background-color: #f1ca89;
+  }
+  100% {
+    background-color: #cc9b6d;
+  }
 }
 h2 {
   border-bottom: 1px solid grey;
   text-align: center;
   margin: 10px;
 }
-main{
-  height: 700px;
-}
+
 .itemList {
   display: flex;
-  align-items: center;
 }
 .section {
   width: 30%;
-  border: 2px solid grey ;
-  padding-bottom: 20px ;
+  border: 2px solid grey;
+  padding-bottom: 20px;
   margin: 20px 20px;
   background-color: bisque;
   border-radius: 15px;
@@ -53,10 +76,24 @@ main{
 .newItem {
   display: flex;
   justify-content: center;
-  margin: 1px;
   cursor: pointer;
-  margin-top: 10px;
-  
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#newItem {
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 0;
+}
+.newItem button {
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 0;
 }
 .section .edit {
   display: none;
@@ -65,29 +102,49 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2px 5px;
-  background-color: rgb(233, 236, 240); 
+  margin: 5px 10px;
+  /* background-color: rgb(233, 236, 240); */
+  height: 30px;
+  font-size: 24px;
 }
 .item > div {
   display: inline-block;
 }
 .itemItems > i {
   width: 15px;
-  font-size: smaller;
-  cursor: pointer; 
+  cursor: pointer;
+  margin: 7px;
+  margin-right: 10px;
 }
 .arrowsleft,
-  .arrowsright  {
+.arrowsright {
+  align-self: center;
   border: 2px solid grey;
   border-radius: 40px;
   background-color: bisque;
   padding: 5px;
+  cursor: pointer;
+  /* margin: 20px; */
 }
-footer > p{
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+footer > p {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-
-
-
+@media screen and (max-width: 1500px) {
+  .itemList {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section {
+    width: 95%;
+  }
+}

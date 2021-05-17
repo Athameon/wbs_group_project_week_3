@@ -155,8 +155,8 @@ function getTaskTemplate(status, inputValue, uuid, position) {
         <input class="edit" type="text" value="${inputValue}">
       </div>
       <div class="itemItems">
-        <i onClick="editTask(this)" class="fas fa-pen fa-2x"></i>
-        <i onClick="trashTask(this)" class="fas fa-trash-alt fa-2x"></i>
+        <i onClick="editTask(this)" class="fas fa-pen"></i>
+        <i onClick="trashTask(this)" class="fas fa-trash-alt"></i>
       </div>
     </div>
     `;
