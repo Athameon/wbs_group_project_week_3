@@ -45,16 +45,6 @@ const backArrows = document.getElementsByClassName('back');
     moveTask('left');
 })});
 
-// const arrow3 = document.getElementById('arrow-right-3');
-// arrow3.addEventListener('click', function () {
-//     moveTask('right');
-// });
-
-// const arrow4 = document.getElementById('arrow-left-4');
-// arrow4.addEventListener('click', function () {
-//     moveTask('left');
-// });
-
 function moveTask(direction) {
     const checkedCheckBoxes = getCheckedCheckbox();
     checkedCheckBoxes.forEach(checkbox => {

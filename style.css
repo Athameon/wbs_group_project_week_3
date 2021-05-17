@@ -146,6 +146,10 @@ h2 {
   margin-bottom: 40px;
 }
 
+.horizontalArrows {
+  display: none;
+}
+
 input[type="checkbox"] {
   transform: scale(1.5);
 }
@@ -166,6 +170,19 @@ footer > p {
   }
   .section {
     width: 60%;
+  }
+
+  .verticalArrows {
+    display: none;
+  }
+  .horizontalArrows {
+    display: flex;
+  }
+
+  .arrowsleft i:first-child,
+  .arrowsright i:first-child {
+    margin-right: 40px;
+    margin-bottom: 0px;
   }
 }
 
